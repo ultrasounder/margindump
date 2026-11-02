@@ -1,0 +1,23 @@
+[   0.00s] run dir: samples/run_live_sandbox/20261030-225436
+[   0.00s] margindump 0.1.0 probe (root=True)
+[   0.04s]   board : None None / None None BIOS None
+[   0.04s]   cpu   : Intel(R) Xeon(R) Processor @ 2.10GHz (2 threads)
+[   0.04s]   dimms : unavailable - 0 populated (no SMBIOS type-17 entries in sysfs and dmidecode not installed)
+[   0.04s]   spd   : unavailable - 0 module(s)
+[   0.04s]   pcie  : 11 functions, verdicts {'LEGACY_PCI': 11}
+[   0.04s]   bdat  : NO_TABLE - no BDAT ACPI table: this BIOS does not publish Intel RMT results (or ACPI tables are not readable - need root)
+[   0.04s] functional margin sweep: engine=builtin-numpy patterns=['solid', 'checker', 'prbs', 'rowhammer'] threads=[1, 2] 3.0s x 512MB per point
+[   3.89s]        solid x1  threads: PASS    2230.2 MB/s  bit_errors=0
+[   7.30s]        solid x2  threads: PASS    5035.9 MB/s  bit_errors=0
+[  11.20s]      checker x1  threads: PASS    2204.5 MB/s  bit_errors=0
+[  14.71s]      checker x2  threads: PASS    4591.5 MB/s  bit_errors=0
+[  18.75s]         prbs x1  threads: PASS    1597.5 MB/s  bit_errors=0
+[  22.54s]         prbs x2  threads: PASS    4247.1 MB/s  bit_errors=0
+[  26.21s]    rowhammer x1  threads: PASS    2343.0 MB/s  bit_errors=0
+[  29.64s]    rowhammer x2  threads: PASS    4377.0 MB/s  bit_errors=0
+[  29.64s] functional sweep verdict: PASS (0 bit errors)
+[  29.98s] model eye: DDR4-2666 UI=375 ps -> 213 ps x 180 mV (MODEL)
+[  30.14s]   wrote eye_model_ddr4.png
+[  30.14s]   wrote eye_functional_stress.png
+[  30.14s] report: samples/run_live_sandbox/20261030-225436/report.md
+[  30.14s] ocptv : samples/run_live_sandbox/20261030-225436/ocptv.jsonl

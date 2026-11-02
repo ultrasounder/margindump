@@ -1,0 +1,27 @@
+[   0.00s] run dir: samples/run_simulated_demo/20261030-225507
+[   0.00s] margindump 0.1.0 probe (root=True)
+[   0.06s]   board : None None / None None BIOS None
+[   0.06s]   cpu   : Intel(R) Xeon(R) Processor @ 2.10GHz (2 threads)
+[   0.06s]   dimms : unavailable - 0 populated (no SMBIOS type-17 entries in sysfs and dmidecode not installed)
+[   0.06s]   spd   : unavailable - 0 module(s)
+[   0.06s]   pcie  : 11 functions, verdicts {'LEGACY_PCI': 11}
+[   0.06s]   bdat  : NO_TABLE - no BDAT ACPI table: this BIOS does not publish Intel RMT results (or ACPI tables are not readable - need root)
+[   0.06s] functional margin sweep: engine=simulated patterns=['solid', 'checker', 'prbs', 'rowhammer'] threads=[1, 2] 3.0s x 512MB per point
+[   0.06s]        solid x1  threads: PASS    2500.0 MB/s  bit_errors=0
+[   0.06s]        solid x2  threads: PASS    5000.0 MB/s  bit_errors=0
+[   0.06s]      checker x1  threads: PASS    2375.0 MB/s  bit_errors=0
+[   0.06s]      checker x2  threads: PASS    4750.0 MB/s  bit_errors=0
+[   0.06s]         prbs x1  threads: PASS    2125.0 MB/s  bit_errors=0
+[   0.06s]         prbs x2  threads: PASS    4250.0 MB/s  bit_errors=0
+[   0.06s]    rowhammer x1  threads: FAIL    2000.0 MB/s  bit_errors=3
+[   0.06s]    rowhammer x2  threads: FAIL    4000.0 MB/s  bit_errors=3
+[   0.06s] functional sweep verdict: FAIL (6 bit errors)
+[   0.52s] model eye: DDR4-2666 UI=375 ps -> 213 ps x 180 mV (MODEL)
+[   0.91s] SIMULATED - PCIe Gen4 x16 LMR: FAIL - weakest timing lane11 (30.9 ps), weakest voltage lane11 (41.3 mV)
+[   1.19s] SIMULATED - Intel RMT (DDR4-2666 Rx, per rank/byte): PASS - weakest timing r0b3 (190.3 ps), weakest voltage r0b3 (162.8 mV)
+[   1.38s]   wrote eye_model_ddr4.png
+[   1.38s]   wrote eye_margin1d_0_simulated.png
+[   1.38s]   wrote eye_margin1d_1_simulated.png
+[   1.38s]   wrote eye_functional_stress.png
+[   1.38s] report: samples/run_simulated_demo/20261030-225507/report.md
+[   1.38s] ocptv : samples/run_simulated_demo/20261030-225507/ocptv.jsonl

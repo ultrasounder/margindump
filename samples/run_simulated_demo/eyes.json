@@ -1,0 +1,298 @@
+{
+  "model": {
+    "kind": "model",
+    "label": "MODEL - not measured on this DUT",
+    "interface": "DDR4-2666",
+    "ui_ps": 375.0937734433608,
+    "vddq_mv": 1200,
+    "params": {
+      "dj_pp_ps": 97.52438109527381,
+      "rj_sigma_ps": 4.50112528132033,
+      "eye_h0_mv": 360.0,
+      "dn_pp_mv": 72.0,
+      "vn_sigma_mv": 7.2,
+      "target_ber": 1e-12
+    },
+    "eye_width_ps": 212.5531382845711,
+    "eye_height_mv": 180.0,
+    "eye_width_ui": 0.5666666666666667,
+    "rx_mask_approx": {
+      "t_ui": 0.2,
+      "v_mv": 136
+    }
+  },
+  "margin1d_0": {
+    "kind": "margin1d",
+    "label": "SIMULATED - PCIe Gen4 x16 LMR",
+    "source": "simulated",
+    "unit_t": "ps",
+    "unit_v": "mV",
+    "ui_ps": 62.5,
+    "min_timing_ps": 18.75,
+    "min_voltage_mv": 15.0,
+    "entries": [
+      {
+        "id": "lane0",
+        "left_ps": 23.73,
+        "right_ps": 23.11,
+        "up_mv": 46.5,
+        "down_mv": 45.4
+      },
+      {
+        "id": "lane1",
+        "left_ps": 23.69,
+        "right_ps": 23.56,
+        "up_mv": 56.7,
+        "down_mv": 56.4
+      },
+      {
+        "id": "lane2",
+        "left_ps": 24.29,
+        "right_ps": 25.01,
+        "up_mv": 34.9,
+        "down_mv": 36.6
+      },
+      {
+        "id": "lane3",
+        "left_ps": 16.45,
+        "right_ps": 18.06,
+        "up_mv": 32.1,
+        "down_mv": 35.2
+      },
+      {
+        "id": "lane4",
+        "left_ps": 21.95,
+        "right_ps": 23.93,
+        "up_mv": 43.4,
+        "down_mv": 43.7
+      },
+      {
+        "id": "lane5",
+        "left_ps": 18.43,
+        "right_ps": 18.6,
+        "up_mv": 43.3,
+        "down_mv": 39.6
+      },
+      {
+        "id": "lane6",
+        "left_ps": 23.32,
+        "right_ps": 23.79,
+        "up_mv": 52.3,
+        "down_mv": 52.2
+      },
+      {
+        "id": "lane7",
+        "left_ps": 21.68,
+        "right_ps": 18.78,
+        "up_mv": 47.3,
+        "down_mv": 45.8
+      },
+      {
+        "id": "lane8",
+        "left_ps": 22.84,
+        "right_ps": 20.88,
+        "up_mv": 61.2,
+        "down_mv": 62.2
+      },
+      {
+        "id": "lane9",
+        "left_ps": 23.37,
+        "right_ps": 24.1,
+        "up_mv": 53.3,
+        "down_mv": 49.1
+      },
+      {
+        "id": "lane10",
+        "left_ps": 24.74,
+        "right_ps": 23.42,
+        "up_mv": 40.1,
+        "down_mv": 40.9
+      },
+      {
+        "id": "lane11",
+        "left_ps": 15.18,
+        "right_ps": 15.71,
+        "up_mv": 23.3,
+        "down_mv": 18.0
+      },
+      {
+        "id": "lane12",
+        "left_ps": 23.87,
+        "right_ps": 23.3,
+        "up_mv": 43.6,
+        "down_mv": 43.5
+      },
+      {
+        "id": "lane13",
+        "left_ps": 22.82,
+        "right_ps": 22.95,
+        "up_mv": 57.9,
+        "down_mv": 56.9
+      },
+      {
+        "id": "lane14",
+        "left_ps": 23.4,
+        "right_ps": 22.96,
+        "up_mv": 38.4,
+        "down_mv": 37.4
+      },
+      {
+        "id": "lane15",
+        "left_ps": 23.59,
+        "right_ps": 24.98,
+        "up_mv": 50.3,
+        "down_mv": 51.5
+      }
+    ],
+    "summary": {
+      "count": 16,
+      "width_ps_min": 30.89,
+      "width_ps_mean": 44.155625,
+      "height_mv_min": 41.3,
+      "height_mv_mean": 89.9375,
+      "weakest_timing": "lane11",
+      "weakest_voltage": "lane11",
+      "below_minimum": [
+        "lane3",
+        "lane5",
+        "lane11"
+      ],
+      "verdict": "FAIL"
+    }
+  },
+  "margin1d_1": {
+    "kind": "margin1d",
+    "label": "SIMULATED - Intel RMT (DDR4-2666 Rx, per rank/byte)",
+    "source": "simulated",
+    "unit_t": "ps",
+    "unit_v": "mV",
+    "ui_ps": 375.0937734433608,
+    "min_timing_ps": 75.01875468867216,
+    "min_voltage_mv": 60.0,
+    "entries": [
+      {
+        "id": "r0b0",
+        "left_ps": 111.7,
+        "right_ps": 109.9,
+        "up_mv": 95.9,
+        "down_mv": 93.7
+      },
+      {
+        "id": "r0b1",
+        "left_ps": 111.5,
+        "right_ps": 111.1,
+        "up_mv": 109.0,
+        "down_mv": 108.5
+      },
+      {
+        "id": "r0b2",
+        "left_ps": 113.2,
+        "right_ps": 115.4,
+        "up_mv": 81.2,
+        "down_mv": 84.8
+      },
+      {
+        "id": "r0b3",
+        "left_ps": 92.7,
+        "right_ps": 97.6,
+        "up_mv": 78.3,
+        "down_mv": 84.5
+      },
+      {
+        "id": "r0b4",
+        "left_ps": 106.2,
+        "right_ps": 112.1,
+        "up_mv": 93.1,
+        "down_mv": 93.8
+      },
+      {
+        "id": "r0b5",
+        "left_ps": 98.1,
+        "right_ps": 98.6,
+        "up_mv": 94.9,
+        "down_mv": 87.5
+      },
+      {
+        "id": "r0b6",
+        "left_ps": 110.5,
+        "right_ps": 111.9,
+        "up_mv": 103.4,
+        "down_mv": 103.2
+      },
+      {
+        "id": "r0b7",
+        "left_ps": 107.4,
+        "right_ps": 98.7,
+        "up_mv": 99.1,
+        "down_mv": 96.2
+      },
+      {
+        "id": "r1b0",
+        "left_ps": 110.0,
+        "right_ps": 104.1,
+        "up_mv": 113.3,
+        "down_mv": 115.3
+      },
+      {
+        "id": "r1b1",
+        "left_ps": 110.9,
+        "right_ps": 113.1,
+        "up_mv": 106.9,
+        "down_mv": 98.4
+      },
+      {
+        "id": "r1b2",
+        "left_ps": 114.4,
+        "right_ps": 110.5,
+        "up_mv": 88.5,
+        "down_mv": 90.0
+      },
+      {
+        "id": "r1b3",
+        "left_ps": 115.3,
+        "right_ps": 116.9,
+        "up_mv": 107.9,
+        "down_mv": 97.3
+      },
+      {
+        "id": "r1b4",
+        "left_ps": 112.8,
+        "right_ps": 111.1,
+        "up_mv": 92.8,
+        "down_mv": 92.7
+      },
+      {
+        "id": "r1b5",
+        "left_ps": 109.4,
+        "right_ps": 109.7,
+        "up_mv": 110.1,
+        "down_mv": 108.2
+      },
+      {
+        "id": "r1b6",
+        "left_ps": 111.0,
+        "right_ps": 109.7,
+        "up_mv": 89.6,
+        "down_mv": 87.6
+      },
+      {
+        "id": "r1b7",
+        "left_ps": 111.3,
+        "right_ps": 115.5,
+        "up_mv": 101.0,
+        "down_mv": 103.3
+      }
+    ],
+    "summary": {
+      "count": 16,
+      "width_ps_min": 190.3,
+      "width_ps_mean": 218.26875,
+      "height_mv_min": 162.8,
+      "height_mv_mean": 194.375,
+      "weakest_timing": "r0b3",
+      "weakest_voltage": "r0b3",
+      "below_minimum": [],
+      "verdict": "PASS"
+    }
+  }
+}

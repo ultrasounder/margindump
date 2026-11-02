@@ -1,0 +1,185 @@
+{
+  "board": {
+    "sys_vendor": null,
+    "product_name": null,
+    "product_version": null,
+    "board_vendor": null,
+    "board_name": null,
+    "board_version": null,
+    "bios_vendor": null,
+    "bios_version": null,
+    "bios_date": null,
+    "chassis_type": null,
+    "status": "unavailable",
+    "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "nproc": 2,
+    "kernel": "Linux 6.18.44-fc-v185"
+  },
+  "dimms": {
+    "status": "unavailable",
+    "detail": "no SMBIOS type-17 entries in sysfs and dmidecode not installed",
+    "dimms": []
+  },
+  "spd": {
+    "status": "unavailable",
+    "modules": [],
+    "source": "sysfs i2c eeprom (ee1004/spd5118/at24)",
+    "detail": "no SPD EEPROM visible: needs root, i2c-i801 + ee1004 (DDR4) or spd5118 (DDR5); some boards hide SMBus SPD"
+  },
+  "pcie": {
+    "source": "/sys/bus/pci/devices/*/config (pure-Python capability walk)",
+    "root": true,
+    "function_count": 11,
+    "verdict_counts": {
+      "LEGACY_PCI": 11
+    },
+    "marginable_links": [],
+    "tools": {
+      "pcilmr": null,
+      "pcie_lmt": null,
+      "pci_lmt": null,
+      "lspci": null,
+      "nvme": null
+    },
+    "functions": [
+      {
+        "bdf": "0000:00:00.0",
+        "name": "vendor 0x8086 device 0x0d57 class 0x060000",
+        "config_bytes": 4096,
+        "vendor": "0x8086",
+        "device": "0x0d57",
+        "class": "0x060000",
+        "driver": null,
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:01.0",
+        "name": "vendor 0x1af4 device 0x1045 class 0xffff00",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1045",
+        "class": "0xffff00",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:02.0",
+        "name": "vendor 0x1af4 device 0x1042 class 0x018000",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1042",
+        "class": "0x018000",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:03.0",
+        "name": "vendor 0x1af4 device 0x1042 class 0x018000",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1042",
+        "class": "0x018000",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:04.0",
+        "name": "vendor 0x1af4 device 0x1042 class 0x018000",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1042",
+        "class": "0x018000",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:05.0",
+        "name": "vendor 0x1af4 device 0x1042 class 0x018000",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1042",
+        "class": "0x018000",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:06.0",
+        "name": "vendor 0x1af4 device 0x1042 class 0x018000",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1042",
+        "class": "0x018000",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:07.0",
+        "name": "vendor 0x1af4 device 0x1042 class 0x018000",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1042",
+        "class": "0x018000",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:08.0",
+        "name": "vendor 0x1af4 device 0x1041 class 0x020000",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1041",
+        "class": "0x020000",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:09.0",
+        "name": "vendor 0x1af4 device 0x1053 class 0xffff00",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1053",
+        "class": "0xffff00",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      },
+      {
+        "bdf": "0000:00:0a.0",
+        "name": "vendor 0x1af4 device 0x1044 class 0xffff00",
+        "config_bytes": 256,
+        "vendor": "0x1af4",
+        "device": "0x1044",
+        "class": "0xffff00",
+        "driver": "virtio-pci",
+        "ext_caps": {},
+        "lmr_verdict": "LEGACY_PCI",
+        "lmr_reason": "no PCI Express capability (not a PCIe link)"
+      }
+    ]
+  },
+  "bdat": {
+    "acpi_tables_visible": 6,
+    "bdat_table_present": false,
+    "status": "NO_TABLE",
+    "detail": "no BDAT ACPI table: this BIOS does not publish Intel RMT results (or ACPI tables are not readable - need root)"
+  }
+}

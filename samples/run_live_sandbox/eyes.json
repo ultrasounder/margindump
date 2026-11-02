@@ -1,0 +1,24 @@
+{
+  "model": {
+    "kind": "model",
+    "label": "MODEL - not measured on this DUT",
+    "interface": "DDR4-2666",
+    "ui_ps": 375.0937734433608,
+    "vddq_mv": 1200,
+    "params": {
+      "dj_pp_ps": 97.52438109527381,
+      "rj_sigma_ps": 4.50112528132033,
+      "eye_h0_mv": 360.0,
+      "dn_pp_mv": 72.0,
+      "vn_sigma_mv": 7.2,
+      "target_ber": 1e-12
+    },
+    "eye_width_ps": 212.5531382845711,
+    "eye_height_mv": 180.0,
+    "eye_width_ui": 0.5666666666666667,
+    "rx_mask_approx": {
+      "t_ui": 0.2,
+      "v_mv": 136
+    }
+  }
+}

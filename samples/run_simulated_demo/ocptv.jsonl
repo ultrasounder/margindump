@@ -1,0 +1,161 @@
+{"sequenceNumber": 1, "timestamp": "2026-10-31T05:55:09.117+00:00", "testRunArtifact": {"testRunStart": {"name": "margindump", "version": "0.1.0", "commandLine": "margindump.py --out samples/run_simulated_demo all --quick --seconds 3 --mb 512 --simulated", "parameters": {}, "dutInfo": {"dutInfoId": "dut0", "name": "linux-pc", "platformInfos": [{"info": "status=unavailable"}, {"info": "cpu_model=Intel(R) Xeon(R) Processor @ 2.10GHz"}, {"info": "kernel=Linux 6.18.44-fc-v185"}], "hardwareInfos": [], "softwareInfos": [{"softwareInfoId": "os", "name": "kernel", "version": "Linux 6.18.44-fc-v185", "softwareType": "SYSTEM"}]}}}}
+{"sequenceNumber": 2, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "1", "testStepStart": {"name": "pcie_lane_margining_capability"}}}
+{"sequenceNumber": 3, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "1", "testStepEnd": {"status": "SKIP"}}}
+{"sequenceNumber": 4, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "2", "testStepStart": {"name": "intel_rmt_bdat_discovery"}}}
+{"sequenceNumber": 5, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "2", "measurement": {"name": "bdat_table_present", "value": false}}}
+{"sequenceNumber": 6, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "2", "log": {"severity": "INFO", "message": "NO_TABLE: no BDAT ACPI table: this BIOS does not publish Intel RMT results (or ACPI tables are not readable - need root)"}}}
+{"sequenceNumber": 7, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "2", "testStepEnd": {"status": "SKIP"}}}
+{"sequenceNumber": 8, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "testStepStart": {"name": "functional_memory_stress_margin"}}}
+{"sequenceNumber": 9, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bit_errors[solid,t1]", "value": 0, "unit": "count", "validators": [{"name": "zero_errors", "type": "EQUAL", "value": 0}]}}}
+{"sequenceNumber": 10, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bandwidth[solid,t1]", "value": 2500.0, "unit": "MB/s"}}}
+{"sequenceNumber": 11, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bit_errors[solid,t2]", "value": 0, "unit": "count", "validators": [{"name": "zero_errors", "type": "EQUAL", "value": 0}]}}}
+{"sequenceNumber": 12, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bandwidth[solid,t2]", "value": 5000.0, "unit": "MB/s"}}}
+{"sequenceNumber": 13, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bit_errors[checker,t1]", "value": 0, "unit": "count", "validators": [{"name": "zero_errors", "type": "EQUAL", "value": 0}]}}}
+{"sequenceNumber": 14, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bandwidth[checker,t1]", "value": 2375.0, "unit": "MB/s"}}}
+{"sequenceNumber": 15, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bit_errors[checker,t2]", "value": 0, "unit": "count", "validators": [{"name": "zero_errors", "type": "EQUAL", "value": 0}]}}}
+{"sequenceNumber": 16, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bandwidth[checker,t2]", "value": 4750.0, "unit": "MB/s"}}}
+{"sequenceNumber": 17, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bit_errors[prbs,t1]", "value": 0, "unit": "count", "validators": [{"name": "zero_errors", "type": "EQUAL", "value": 0}]}}}
+{"sequenceNumber": 18, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bandwidth[prbs,t1]", "value": 2125.0, "unit": "MB/s"}}}
+{"sequenceNumber": 19, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bit_errors[prbs,t2]", "value": 0, "unit": "count", "validators": [{"name": "zero_errors", "type": "EQUAL", "value": 0}]}}}
+{"sequenceNumber": 20, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bandwidth[prbs,t2]", "value": 4250.0, "unit": "MB/s"}}}
+{"sequenceNumber": 21, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bit_errors[rowhammer,t1]", "value": 3, "unit": "count", "validators": [{"name": "zero_errors", "type": "EQUAL", "value": 0}]}}}
+{"sequenceNumber": 22, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bandwidth[rowhammer,t1]", "value": 2000.0, "unit": "MB/s"}}}
+{"sequenceNumber": 23, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bit_errors[rowhammer,t2]", "value": 3, "unit": "count", "validators": [{"name": "zero_errors", "type": "EQUAL", "value": 0}]}}}
+{"sequenceNumber": 24, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "measurement": {"name": "bandwidth[rowhammer,t2]", "value": 4000.0, "unit": "MB/s"}}}
+{"sequenceNumber": 25, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "diagnosis": {"verdict": "functional-margin-fail", "type": "FAIL", "message": "functional stress proxy; not a voltage/timing margin. Zero errors means 'no observable failure under this stress', not 'wide eye'."}}}
+{"sequenceNumber": 26, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "3", "testStepEnd": {"status": "COMPLETE"}}}
+{"sequenceNumber": 27, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "testStepStart": {"name": "margin1d:SIMULATED - PCIe Gen4 x16 LMR"}}}
+{"sequenceNumber": 28, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane0.left_ps", "value": 23.73, "unit": "ps"}}}
+{"sequenceNumber": 29, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane0.right_ps", "value": 23.11, "unit": "ps"}}}
+{"sequenceNumber": 30, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane0.up_mv", "value": 46.5, "unit": "mV"}}}
+{"sequenceNumber": 31, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane0.down_mv", "value": 45.4, "unit": "mV"}}}
+{"sequenceNumber": 32, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane1.left_ps", "value": 23.69, "unit": "ps"}}}
+{"sequenceNumber": 33, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane1.right_ps", "value": 23.56, "unit": "ps"}}}
+{"sequenceNumber": 34, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane1.up_mv", "value": 56.7, "unit": "mV"}}}
+{"sequenceNumber": 35, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane1.down_mv", "value": 56.4, "unit": "mV"}}}
+{"sequenceNumber": 36, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane2.left_ps", "value": 24.29, "unit": "ps"}}}
+{"sequenceNumber": 37, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane2.right_ps", "value": 25.01, "unit": "ps"}}}
+{"sequenceNumber": 38, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane2.up_mv", "value": 34.9, "unit": "mV"}}}
+{"sequenceNumber": 39, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane2.down_mv", "value": 36.6, "unit": "mV"}}}
+{"sequenceNumber": 40, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane3.left_ps", "value": 16.45, "unit": "ps"}}}
+{"sequenceNumber": 41, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane3.right_ps", "value": 18.06, "unit": "ps"}}}
+{"sequenceNumber": 42, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane3.up_mv", "value": 32.1, "unit": "mV"}}}
+{"sequenceNumber": 43, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane3.down_mv", "value": 35.2, "unit": "mV"}}}
+{"sequenceNumber": 44, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane4.left_ps", "value": 21.95, "unit": "ps"}}}
+{"sequenceNumber": 45, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane4.right_ps", "value": 23.93, "unit": "ps"}}}
+{"sequenceNumber": 46, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane4.up_mv", "value": 43.4, "unit": "mV"}}}
+{"sequenceNumber": 47, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane4.down_mv", "value": 43.7, "unit": "mV"}}}
+{"sequenceNumber": 48, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane5.left_ps", "value": 18.43, "unit": "ps"}}}
+{"sequenceNumber": 49, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane5.right_ps", "value": 18.6, "unit": "ps"}}}
+{"sequenceNumber": 50, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane5.up_mv", "value": 43.3, "unit": "mV"}}}
+{"sequenceNumber": 51, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane5.down_mv", "value": 39.6, "unit": "mV"}}}
+{"sequenceNumber": 52, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane6.left_ps", "value": 23.32, "unit": "ps"}}}
+{"sequenceNumber": 53, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane6.right_ps", "value": 23.79, "unit": "ps"}}}
+{"sequenceNumber": 54, "timestamp": "2026-10-31T05:55:09.117+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane6.up_mv", "value": 52.3, "unit": "mV"}}}
+{"sequenceNumber": 55, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane6.down_mv", "value": 52.2, "unit": "mV"}}}
+{"sequenceNumber": 56, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane7.left_ps", "value": 21.68, "unit": "ps"}}}
+{"sequenceNumber": 57, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane7.right_ps", "value": 18.78, "unit": "ps"}}}
+{"sequenceNumber": 58, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane7.up_mv", "value": 47.3, "unit": "mV"}}}
+{"sequenceNumber": 59, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane7.down_mv", "value": 45.8, "unit": "mV"}}}
+{"sequenceNumber": 60, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane8.left_ps", "value": 22.84, "unit": "ps"}}}
+{"sequenceNumber": 61, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane8.right_ps", "value": 20.88, "unit": "ps"}}}
+{"sequenceNumber": 62, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane8.up_mv", "value": 61.2, "unit": "mV"}}}
+{"sequenceNumber": 63, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane8.down_mv", "value": 62.2, "unit": "mV"}}}
+{"sequenceNumber": 64, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane9.left_ps", "value": 23.37, "unit": "ps"}}}
+{"sequenceNumber": 65, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane9.right_ps", "value": 24.1, "unit": "ps"}}}
+{"sequenceNumber": 66, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane9.up_mv", "value": 53.3, "unit": "mV"}}}
+{"sequenceNumber": 67, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane9.down_mv", "value": 49.1, "unit": "mV"}}}
+{"sequenceNumber": 68, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane10.left_ps", "value": 24.74, "unit": "ps"}}}
+{"sequenceNumber": 69, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane10.right_ps", "value": 23.42, "unit": "ps"}}}
+{"sequenceNumber": 70, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane10.up_mv", "value": 40.1, "unit": "mV"}}}
+{"sequenceNumber": 71, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane10.down_mv", "value": 40.9, "unit": "mV"}}}
+{"sequenceNumber": 72, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane11.left_ps", "value": 15.18, "unit": "ps"}}}
+{"sequenceNumber": 73, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane11.right_ps", "value": 15.71, "unit": "ps"}}}
+{"sequenceNumber": 74, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane11.up_mv", "value": 23.3, "unit": "mV"}}}
+{"sequenceNumber": 75, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane11.down_mv", "value": 18.0, "unit": "mV"}}}
+{"sequenceNumber": 76, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane12.left_ps", "value": 23.87, "unit": "ps"}}}
+{"sequenceNumber": 77, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane12.right_ps", "value": 23.3, "unit": "ps"}}}
+{"sequenceNumber": 78, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane12.up_mv", "value": 43.6, "unit": "mV"}}}
+{"sequenceNumber": 79, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane12.down_mv", "value": 43.5, "unit": "mV"}}}
+{"sequenceNumber": 80, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane13.left_ps", "value": 22.82, "unit": "ps"}}}
+{"sequenceNumber": 81, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane13.right_ps", "value": 22.95, "unit": "ps"}}}
+{"sequenceNumber": 82, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane13.up_mv", "value": 57.9, "unit": "mV"}}}
+{"sequenceNumber": 83, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane13.down_mv", "value": 56.9, "unit": "mV"}}}
+{"sequenceNumber": 84, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane14.left_ps", "value": 23.4, "unit": "ps"}}}
+{"sequenceNumber": 85, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane14.right_ps", "value": 22.96, "unit": "ps"}}}
+{"sequenceNumber": 86, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane14.up_mv", "value": 38.4, "unit": "mV"}}}
+{"sequenceNumber": 87, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane14.down_mv", "value": 37.4, "unit": "mV"}}}
+{"sequenceNumber": 88, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane15.left_ps", "value": 23.59, "unit": "ps"}}}
+{"sequenceNumber": 89, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane15.right_ps", "value": 24.98, "unit": "ps"}}}
+{"sequenceNumber": 90, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane15.up_mv", "value": 50.3, "unit": "mV"}}}
+{"sequenceNumber": 91, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "measurement": {"name": "lane15.down_mv", "value": 51.5, "unit": "mV"}}}
+{"sequenceNumber": 92, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "diagnosis": {"verdict": "margin-fail", "type": "FAIL", "message": "below minimum: ['lane3', 'lane5', 'lane11']"}}}
+{"sequenceNumber": 93, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "4", "testStepEnd": {"status": "COMPLETE"}}}
+{"sequenceNumber": 94, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "testStepStart": {"name": "margin1d:SIMULATED - Intel RMT (DDR4-2666 Rx, per rank/byte)"}}}
+{"sequenceNumber": 95, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b0.left_ps", "value": 111.7, "unit": "ps"}}}
+{"sequenceNumber": 96, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b0.right_ps", "value": 109.9, "unit": "ps"}}}
+{"sequenceNumber": 97, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b0.up_mv", "value": 95.9, "unit": "mV"}}}
+{"sequenceNumber": 98, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b0.down_mv", "value": 93.7, "unit": "mV"}}}
+{"sequenceNumber": 99, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b1.left_ps", "value": 111.5, "unit": "ps"}}}
+{"sequenceNumber": 100, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b1.right_ps", "value": 111.1, "unit": "ps"}}}
+{"sequenceNumber": 101, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b1.up_mv", "value": 109.0, "unit": "mV"}}}
+{"sequenceNumber": 102, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b1.down_mv", "value": 108.5, "unit": "mV"}}}
+{"sequenceNumber": 103, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b2.left_ps", "value": 113.2, "unit": "ps"}}}
+{"sequenceNumber": 104, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b2.right_ps", "value": 115.4, "unit": "ps"}}}
+{"sequenceNumber": 105, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b2.up_mv", "value": 81.2, "unit": "mV"}}}
+{"sequenceNumber": 106, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b2.down_mv", "value": 84.8, "unit": "mV"}}}
+{"sequenceNumber": 107, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b3.left_ps", "value": 92.7, "unit": "ps"}}}
+{"sequenceNumber": 108, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b3.right_ps", "value": 97.6, "unit": "ps"}}}
+{"sequenceNumber": 109, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b3.up_mv", "value": 78.3, "unit": "mV"}}}
+{"sequenceNumber": 110, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b3.down_mv", "value": 84.5, "unit": "mV"}}}
+{"sequenceNumber": 111, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b4.left_ps", "value": 106.2, "unit": "ps"}}}
+{"sequenceNumber": 112, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b4.right_ps", "value": 112.1, "unit": "ps"}}}
+{"sequenceNumber": 113, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b4.up_mv", "value": 93.1, "unit": "mV"}}}
+{"sequenceNumber": 114, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b4.down_mv", "value": 93.8, "unit": "mV"}}}
+{"sequenceNumber": 115, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b5.left_ps", "value": 98.1, "unit": "ps"}}}
+{"sequenceNumber": 116, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b5.right_ps", "value": 98.6, "unit": "ps"}}}
+{"sequenceNumber": 117, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b5.up_mv", "value": 94.9, "unit": "mV"}}}
+{"sequenceNumber": 118, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b5.down_mv", "value": 87.5, "unit": "mV"}}}
+{"sequenceNumber": 119, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b6.left_ps", "value": 110.5, "unit": "ps"}}}
+{"sequenceNumber": 120, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b6.right_ps", "value": 111.9, "unit": "ps"}}}
+{"sequenceNumber": 121, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b6.up_mv", "value": 103.4, "unit": "mV"}}}
+{"sequenceNumber": 122, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b6.down_mv", "value": 103.2, "unit": "mV"}}}
+{"sequenceNumber": 123, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b7.left_ps", "value": 107.4, "unit": "ps"}}}
+{"sequenceNumber": 124, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b7.right_ps", "value": 98.7, "unit": "ps"}}}
+{"sequenceNumber": 125, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b7.up_mv", "value": 99.1, "unit": "mV"}}}
+{"sequenceNumber": 126, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r0b7.down_mv", "value": 96.2, "unit": "mV"}}}
+{"sequenceNumber": 127, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b0.left_ps", "value": 110.0, "unit": "ps"}}}
+{"sequenceNumber": 128, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b0.right_ps", "value": 104.1, "unit": "ps"}}}
+{"sequenceNumber": 129, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b0.up_mv", "value": 113.3, "unit": "mV"}}}
+{"sequenceNumber": 130, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b0.down_mv", "value": 115.3, "unit": "mV"}}}
+{"sequenceNumber": 131, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b1.left_ps", "value": 110.9, "unit": "ps"}}}
+{"sequenceNumber": 132, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b1.right_ps", "value": 113.1, "unit": "ps"}}}
+{"sequenceNumber": 133, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b1.up_mv", "value": 106.9, "unit": "mV"}}}
+{"sequenceNumber": 134, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b1.down_mv", "value": 98.4, "unit": "mV"}}}
+{"sequenceNumber": 135, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b2.left_ps", "value": 114.4, "unit": "ps"}}}
+{"sequenceNumber": 136, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b2.right_ps", "value": 110.5, "unit": "ps"}}}
+{"sequenceNumber": 137, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b2.up_mv", "value": 88.5, "unit": "mV"}}}
+{"sequenceNumber": 138, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b2.down_mv", "value": 90.0, "unit": "mV"}}}
+{"sequenceNumber": 139, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b3.left_ps", "value": 115.3, "unit": "ps"}}}
+{"sequenceNumber": 140, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b3.right_ps", "value": 116.9, "unit": "ps"}}}
+{"sequenceNumber": 141, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b3.up_mv", "value": 107.9, "unit": "mV"}}}
+{"sequenceNumber": 142, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b3.down_mv", "value": 97.3, "unit": "mV"}}}
+{"sequenceNumber": 143, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b4.left_ps", "value": 112.8, "unit": "ps"}}}
+{"sequenceNumber": 144, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b4.right_ps", "value": 111.1, "unit": "ps"}}}
+{"sequenceNumber": 145, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b4.up_mv", "value": 92.8, "unit": "mV"}}}
+{"sequenceNumber": 146, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b4.down_mv", "value": 92.7, "unit": "mV"}}}
+{"sequenceNumber": 147, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b5.left_ps", "value": 109.4, "unit": "ps"}}}
+{"sequenceNumber": 148, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b5.right_ps", "value": 109.7, "unit": "ps"}}}
+{"sequenceNumber": 149, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b5.up_mv", "value": 110.1, "unit": "mV"}}}
+{"sequenceNumber": 150, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b5.down_mv", "value": 108.2, "unit": "mV"}}}
+{"sequenceNumber": 151, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b6.left_ps", "value": 111.0, "unit": "ps"}}}
+{"sequenceNumber": 152, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b6.right_ps", "value": 109.7, "unit": "ps"}}}
+{"sequenceNumber": 153, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b6.up_mv", "value": 89.6, "unit": "mV"}}}
+{"sequenceNumber": 154, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b6.down_mv", "value": 87.6, "unit": "mV"}}}
+{"sequenceNumber": 155, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b7.left_ps", "value": 111.3, "unit": "ps"}}}
+{"sequenceNumber": 156, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b7.right_ps", "value": 115.5, "unit": "ps"}}}
+{"sequenceNumber": 157, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b7.up_mv", "value": 101.0, "unit": "mV"}}}
+{"sequenceNumber": 158, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "measurement": {"name": "r1b7.down_mv", "value": 103.3, "unit": "mV"}}}
+{"sequenceNumber": 159, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "diagnosis": {"verdict": "margin-pass", "type": "PASS", "message": "below minimum: []"}}}
+{"sequenceNumber": 160, "timestamp": "2026-10-31T05:55:09.118+00:00", "testStepArtifact": {"testStepId": "5", "testStepEnd": {"status": "COMPLETE"}}}
+{"sequenceNumber": 161, "timestamp": "2026-10-31T05:55:09.118+00:00", "testRunArtifact": {"testRunEnd": {"status": "COMPLETE", "result": "FAIL"}}}
